@@ -1,20 +1,21 @@
---- netwag-5.12.0-src/src/config.dat.orig	Wed Mar 31 14:59:40 2004
-+++ netwag-5.12.0-src/src/config.dat	Wed Mar 31 15:01:04 2004
-@@ -4,7 +4,7 @@
+diff -urN netwag-5.25.0-src.oryg/src/config.dat netwag-5.25.0-src/src/config.dat
+--- netwag-5.25.0-src.oryg/src/config.dat	2004-09-28 16:59:34.339941720 +0200
++++ netwag-5.25.0-src/src/config.dat	2004-09-28 17:00:24.589302656 +0200
+@@ -7,7 +7,7 @@
  
  ##########################################################################
- ### installation prefix directory of netwib [should not need to be modified]
--NETWIBDEF_INSTPREFIX=/usr/local
-+NETWIBDEF_INSTPREFIX=/usr
- 
- ##########################################################################
- ### installation destination directory [should not need to be modified]
-@@ -30,7 +30,7 @@
- ##########################################################################
- ##########################################################################
- ### installation prefix directory of netwox [should not need to be modified]
+ ### installation prefix directory of netwox
 -NETWOXDEF_INSTPREFIX=/usr/local
 +NETWOXDEF_INSTPREFIX=/usr
  
+ ### installation destination directory of netwox
+ NETWOXDEF_INSTDESTDIR=""
+@@ -18,7 +18,7 @@
+ 
  ##########################################################################
- ### installation destination directory [should not need to be modified]
+ ### directories where netwag will be installed
+-NETWAGDEF_INSTPREFIX=/usr/local
++NETWAGDEF_INSTPREFIX=/usr
+ NETWAGDEF_INSTBIN=${NETWAGDEF_INSTPREFIX}/bin
+ NETWAGDEF_INSTMAN=${NETWAGDEF_INSTPREFIX}/man
+ NETWAGDEF_INSTMAN1=${NETWAGDEF_INSTMAN}/man1
