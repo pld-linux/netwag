@@ -7,7 +7,7 @@ Epoch:		0
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.laurentconstantin.com/common/netw/netwag/download/v5/%{name}-%{version}-src.tgz
-# Source0-md5:	272aa2097615ce5d4d97ecf266ea5791
+# Source0-md5:	6b85569eed1770f586c0237fe353eacd
 Patch0:		%{name}-config.patch
 URL:		http://www.laurentconstantin.com/en/netw/netwag/
 BuildRequires:	netwib-devel >= %{version}
