@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=netwag
+Comment=GUI for netwox
+Comment[pl]=Graficzny interfejs do netwoksa
+Exec=netwag
+Icon=netwag.xpm
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=Network;
+Encoding=UTF-8
+# vi: encoding=utf-8
