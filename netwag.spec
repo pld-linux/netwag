@@ -1,13 +1,13 @@
 Summary:	GUI for netwox
 Summary(pl):	Graficzny interfejs do netwoksa
 Name:		netwag
-Version:	5.26.0
+Version:	5.27.0
 Release:	1
 Epoch:		0
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.laurentconstantin.com/common/netw/netwag/download/v5/%{name}-%{version}-src.tgz
-# Source0-md5:	0b3fc9a9b1ae9f3b5c90cd4be9fab4c2
+# Source0-md5:	445172af330b3370a920dea60eaad045
 Source1:	%{name}.desktop
 Patch0:		%{name}-config.patch
 URL:		http://www.laurentconstantin.com/en/netw/netwag/
