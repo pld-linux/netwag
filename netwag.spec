@@ -1,7 +1,7 @@
 Summary:	GUI for netwox
 Summary(pl):	Graficzny interfejs do netwoksa
 Name:		netwag
-Version:	5.23.0
+Version:	5.13.0
 Release:	1
 Epoch:		0
 License:	GPL
