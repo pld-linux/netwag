@@ -1,19 +1,19 @@
 Summary:	GUI for netwox
 Summary(pl):	Graficzny interfejs do netwoksa
 Name:		netwag
-Version:	5.12.0
+Version:	5.13.0
 Release:	1
 Epoch:		0
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.laurentconstantin.com/common/netw/netwag/download/v5/%{name}-%{version}-src.tgz
-# Source0-md5:	493dc96a7c7411035ab06f8b0afaba4c
+# Source0-md5:	6b85569eed1770f586c0237fe353eacd
 Patch0:		%{name}-config.patch
 URL:		http://www.laurentconstantin.com/en/netw/netwag/
-BuildRequires:	netwib-devel
+BuildRequires:	netwib-devel >= %{version}
 BuildRequires:	sed >= 4.0
 BuildRequires:	tk
-Requires:	netwox
+Requires:	netwox >= %{version}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
