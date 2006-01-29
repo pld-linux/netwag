@@ -1,13 +1,13 @@
 Summary:	GUI for netwox
 Summary(pl):	Graficzny interfejs do netwoksa
 Name:		netwag
-Version:	5.30.0
+Version:	5.33.0
 Release:	1
 Epoch:		0
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.laurentconstantin.com/common/netw/netwag/download/v5/%{name}-%{version}-src.tgz
-# Source0-md5:	af47cdfad4d705bafaaa047909422afb
+# Source0-md5:	407b27cece1291897b9589ae077bbae5
 Source1:	%{name}.desktop
 Patch0:		%{name}-config.patch
 URL:		http://www.laurentconstantin.com/en/netw/netwag/
@@ -49,6 +49,9 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_desktopdir},%{_pixmapsd
 
 install misc/unix/ico/ico_netw-32x32.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.xpm
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+
+rm -f $RPM_BUILD_ROOT%{_mandir}/man1/netwag.1
+echo ".so netwag533.1" > $RPM_BUILD_ROOT%{_mandir}/man1/netwag.1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
