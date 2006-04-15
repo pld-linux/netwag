@@ -1,7 +1,8 @@
 Summary:	GUI for netwox
 Summary(pl):	Graficzny interfejs do netwoksa
 Name:		netwag
-Version:	5.34.0
+%define         _base_version   5.34
+Version:	%{_base_version}.0
 Release:	1
 Epoch:		0
 License:	GPL
@@ -18,6 +19,8 @@ BuildRequires:	tk
 Requires:	netwox >= %{version}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_man_suffix	%(echo %{_base_version} | tr -d . )
 
 %description
 GUI for Netwox (Netwox is a toolbox for network administrators and
@@ -51,7 +54,7 @@ install misc/unix/ico/ico_netw-32x32.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.x
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 rm -f $RPM_BUILD_ROOT%{_mandir}/man1/netwag.1
-echo ".so netwag533.1" > $RPM_BUILD_ROOT%{_mandir}/man1/netwag.1
+echo ".so netwag%{_man_suffix}.1" > $RPM_BUILD_ROOT%{_mandir}/man1/netwag.1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
