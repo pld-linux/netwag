@@ -1,7 +1,7 @@
 Summary:	GUI for netwox
 Summary(pl):	Graficzny interfejs do netwoksa
 Name:		netwag
-%define         _base_version   5.34
+%define		_base_version	5.34
 Version:	%{_base_version}.0
 Release:	1
 Epoch:		0
@@ -46,9 +46,9 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} -C src install \
-        INSTBIN=$RPM_BUILD_ROOT%{_bindir} \
-        INSTMAN1=$RPM_BUILD_ROOT%{_mandir}/man1 \
-        INSTUSERGROUP="$(id -u):$(id -g)"
+	INSTBIN=$RPM_BUILD_ROOT%{_bindir} \
+	INSTMAN1=$RPM_BUILD_ROOT%{_mandir}/man1 \
+	INSTUSERGROUP="$(id -u):$(id -g)"
 
 install misc/unix/ico/ico_netw-32x32.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.xpm
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
