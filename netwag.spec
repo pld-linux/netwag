@@ -64,5 +64,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc doc/*.txt
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man?/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/*
