@@ -1,5 +1,5 @@
 Summary:	GUI for netwox
-Summary(pl):	Graficzny interfejs do netwoksa
+Summary(pl.UTF-8):   Graficzny interfejs do netwoksa
 Name:		netwag
 %define		_base_version	5.34
 Version:	%{_base_version}.0
@@ -26,9 +26,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 GUI for Netwox (Netwox is a toolbox for network administrators and
 network hackers).
 
-%description -l pl
-Graficzny interfejs do Netwoksa (Netwox to zestaw narzêdzi dla
-administratorów sieci i hackerów sieciowych).
+%description -l pl.UTF-8
+Graficzny interfejs do Netwoksa (Netwox to zestaw narzÄ™dzi dla
+administratorÃ³w sieci i hackerÃ³w sieciowych).
 
 %prep
 %setup -q -n %{name}-%{version}-src
