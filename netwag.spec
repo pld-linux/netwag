@@ -1,5 +1,5 @@
 Summary:	GUI for netwox
-Summary(pl.UTF-8):   Graficzny interfejs do netwoksa
+Summary(pl.UTF-8):	Graficzny interfejs do netwoksa
 Name:		netwag
 %define		_base_version	5.34
 Version:	%{_base_version}.0
